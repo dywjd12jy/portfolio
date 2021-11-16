@@ -1,0 +1,187 @@
+* {
+  padding: 0;
+  margin: 0;
+  color: #efefef;
+}
+
+html {
+  font-size: 0.052083333vw;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 16rem;
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: "GowunBatang-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*container*/
+.container {
+  max-width: 1440px;
+  height: inherit;
+  margin: 0 auto;
+}
+
+@media (max-width: 1440px) {
+  .container {
+    width: 100%;
+  }
+}
+header {
+  font-family: "DM Serif Display", serif;
+  position: fixed;
+  color: #efefef;
+  width: 100%;
+  z-index: 10;
+}
+header .nav {
+  display: flex;
+  justify-content: space-between;
+}
+header .nav li {
+  font-size: 25rem;
+  padding: 15rem 0 0 0;
+  font-weight: 600;
+  position: relative;
+}
+header .nav li:hover a:hover:after {
+  width: 100%;
+  left: 0;
+}
+header .nav li a:after {
+  content: "";
+  background: none repeat scroll 0 0 transparent;
+  bottom: -10px;
+  display: block;
+  background: #ffb000;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+section {
+  height: 100vh;
+}
+
+#cont1 {
+  background-color: #194852;
+  height: 100vh;
+  position: relative;
+  font-family: "GowunBatang-Bold";
+  color: #fefefe;
+}
+#cont1 .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#cont1 .name_bar {
+  position: absolute;
+  top: 8vw;
+  left: 0;
+  width: 100%;
+  height: 15vw;
+  opacity: 0.5;
+  border-top: solid 0.5px #d9d9d9;
+  border-bottom: solid 0.5px #d9d9d9;
+}
+#cont1 .name {
+  padding: 300rem 0 0 210rem;
+  display: flex;
+  font-size: 57rem;
+  position: relative;
+}
+#cont1 .name .sign {
+  position: absolute;
+  z-index: -0.1;
+  width: 32vw;
+  top: 23%;
+  left: -3%;
+}
+#cont1 .name .sign img {
+  width: 100%;
+}
+#cont1 .cont1_bottom p {
+  color: #ebd1af;
+  font-size: 25rem;
+  line-height: 65rem;
+  opacity: 0.7;
+}
+#cont1 .cont1_bottom p:nth-child(2) {
+  font-size: 60rem;
+  padding: 0 0 60rem 0;
+  margin-left: -8rem;
+  opacity: 1;
+}
+#cont1 .yellow_img {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 10%;
+  width: 30%;
+  height: 100%;
+  background-color: #c99e6b;
+}
+
+#cont2 {
+  height: 100vh;
+  background-color: #195a68;
+}
+#cont2 .cont2_menu {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+}
+#cont2 .cont2_menu .balloon {
+  width: 60vw;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 30px;
+  align-items: flex-end;
+}
+#cont2 .cont2_menu .balloon p {
+  color: #fefefe;
+  font-size: 50rem;
+  transform: rotate(90deg);
+  line-height: -3000px;
+  padding: 0;
+  margin: 0;
+}
+#cont2 .cont2_menu .balloon p span {
+  color: #eee;
+}
+#cont2 .cont2_menu .balloon img {
+  width: 100%;
+}
+#cont2 .cont2_menu .about {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+#cont2 .cont2_menu .about .about_text {
+  width: 40%;
+}
+#cont3 {
+  background-color: #c99e6b;
+}
+
+#cont4 {
+  background-color: #ffb000;
+}
